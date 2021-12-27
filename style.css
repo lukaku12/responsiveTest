@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+}
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #100F0F;
+}
+header{
+    display: flex;
+    width: 724px;
+    max-width: 724px;
+    max-height: 138px;
+    margin: 40px auto;
+    justify-content: space-between;
+    padding: 0px 50px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-logo{
+    background: #1D4147;
+    border: none;
+    color: #E2DFDF;
+    width: 201px;
+    height: 78px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+.logo{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+a, a:visited{
+    color: #9AA0A1;
+    text-decoration: none;
+}
+.nav-links{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 307px;
+    height: 25px;
+}
+section{
+    display: flex;
+    width: 70%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.figma-logo{
+    width: 70px;
+    height: 105.49px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    transition: .7s ease-in-out;
+}
+.primary{
+    top: -20%;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    max-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    text-align: center;
+}
+.primary-text{
+    margin: auto;
+    font-size: 9em;
+    font-weight: bolder;
+    color: #9AA0A1;
+    width: 100%;
+}
+footer{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 724px;
+    max-width: 724px;
+    max-height: 152px;
+    margin: 40px auto;
+    justify-content: space-between;
+    padding: 0px 50px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer div{
+    display: flex;
+}
+.footer-text{
+    width: 247px;
+    height: 40px;
+    color: #9AA0A1;
+    margin: auto 50px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer-social{
+    gap: 15px;
+}
+@media only screen and (max-width: 1630px) {
+    .figma-logo{
+        top: -80%;
+        left: 46%;
+    }
+    .primary{
+        width: 100%;
+        top: -50%;
+        left: 0%;
+    }
+    section{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .figma-logo{
+        top: -80%;
+        left: 44%;
+    }
+    .primary{
+        width: 100%;
+        top: -50%;
+        left: 0%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        max-width: 100vw;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    header{
+        width: 100%;
+        height: 100%;
+        padding: 0 1.2rem;
+    }
+    section{
+        width: 100%;
+    }
+    .figma-logo{
+        left: 45%;
+        transform: translate(0, -50%);
+        z-index: 0;
+    }
+    .primary{
+        width: 100%;
+        top: -50%;
+        left: 0%;
+        font-size: 50%;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        padding: 0 1.2rem;
+        margin: 0;
+    }
+    .youtube{
+        width: 64px;
+        height: 52px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .insta{
+        width: 52px;
+        height: 52px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .footer-text{
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .btn-logo{
+        width: 170px;
+        height: 65px;
+    }
+    .nav-links{
+        display: none;
+    }
+    #responsive{
+        display: inline !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .logo{
+        display: none;
+    }
+}
+#responsive{
+    background: #1D4147;
+    border: none;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    color: #E2DFDF;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 5%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    display: none;
+}
+#responsive-navigation{
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    background: #100F0F;
+    display: none;
+}
+#goBack{
+    background: #1D4147;
+    border: none;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    color: #E2DFDF;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 5%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+}
+#links{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#links li{
+    height: 50px;
+    font-size: 2rem;
+}
+#links li:hover{
+    color: crimson;
+}
+.responsive-text{
+    color: white !important;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+}
